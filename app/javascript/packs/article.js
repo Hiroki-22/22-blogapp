@@ -36,6 +36,9 @@ document.addEventListener('turbolinks:load', () => {
         appendNewComment(comment)
       })
     })
+    .catch((error) => {
+      window.alert('失敗！')
+    })
 
   handleCommentForm()
 
